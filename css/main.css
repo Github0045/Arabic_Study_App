@@ -1,0 +1,95 @@
+/* Main Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    font-family: 'Open Sans', 'Noto Sans Arabic', sans-serif;
+    background-color: #cfd8dd;
+    text-decoration: rtl;
+}
+
+/* Main Styling */
+.container {
+    width: 500px;
+    margin: auto;
+}
+.container h1 {
+    font-size: 4em;
+    line-height: 1;
+    text-align: center;
+    margin: 64px 0 72px;
+}
+.container .lists-container .dropdown-list {
+    margin-bottom: 14px;
+}
+.container .lists-container .dropdown-list .dropdown-title {
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    line-height: 1;
+    cursor: pointer;
+}
+.container .lists-container .dropdown-list .dropdown-title > * {
+    pointer-events: none;
+}
+.container .lists-container .dropdown-list .wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows .2s;
+} 
+.container .lists-container .dropdown-list .wrapper.open {
+    grid-template-rows: 1fr;
+}
+.container .lists-container .dropdown-list .dropdown-content {
+    min-height: 0;
+}
+.container .lists-container .dropdown-list .dropdown-content li {
+    padding: 12px;
+    line-height: 1;
+    list-style: none;
+    text-align: right;
+    background-color: #f4f4f4;
+    text-decoration:underline;
+    color: #333;
+}
+.container .lists-container .dropdown-list .dropdown-content li a {
+    color: #333;
+    display: block;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay.show {
+    pointer-events: all;
+    opacity: 1;
+}
+.overlay .popup {
+    border-radius: 8px;
+    width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.overlay .popup video {
+    width: 100%;
+    border-radius: 8px;
+}

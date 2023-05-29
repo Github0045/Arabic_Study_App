@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- Google Fonts "Noto Sans Arabic" And "Open Sans" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+<body>
+    <!-- Main Template -->
+    <div class="container">
+        <!-- Header Part -->
+        <div class="header">
+            <h1>JavascriptQiuz</h1>
+            <div class="progress"></div>
+            <span class="persent"><span>0</span>% Completed</span>
+        </div>
+        <!-- QA Part -->
+        <div class="QA">
+            <span class="question"></span>
+            <div class="answers"></div>
+        </div>
+        <!-- Controls Part -->
+        <div class="controls">
+            <span id="next">التالي</span>
+            <span id="submit" class="submit-btn">إنهاء</span>
+            <span id="back">السابق</span>
+        </div>
+        <div class="resultes hide">
+            <div class="progress"></div>
+            <h2>Wrong Answers</h2>
+            <div class="wrong-answers"></div>
+            <div class="refresh">
+                <button>اعادة الاختبار</button>
+            </div>
+        </div>
+    </div>
+    <!-- Js Script -->
+    <script src="./js/quiz.js"></script>
+</body>
+</html>

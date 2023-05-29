@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Study App</title>
+  <!-- Google Fonts "Noto Sans Arabic" And "Open Sans" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>مادة اللغة العربية</h1>
+    <!-- Nested Container For Dropdown Lists -->
+    <div class="lists-container">
+      <!-- Dropdown List For Videos -->
+      <div class="dropdown-list">
+        <!-- Dropdown List Title -->
+        <div class="dropdown-title">
+          <span class="num">عدد مقاطع الفيديو: 2</span>
+          <span class="name">مقاطع فيديو</span>
+        </div>
+        <!-- Dropdown List Content -->
+        <div class="wrapper">
+          <ul class="dropdown-content">
+            <li data-src="./videos/v-1.mp4" style="cursor:pointer;">التطبيق النحوي</li>
+            <li data-src="./videos/v-2.mp4" style="cursor:pointer;">درس التوابع</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Dropdown List To Choose An Exam -->
+      <div class="dropdown-list">
+        <!-- Dropdown List Title -->
+        <div class="dropdown-title">
+          <span class="num">عدد الاختبارات: 2</span>
+          <span class="name">الاختبارات</span>
+        </div>
+        <!-- Dropdown List Content -->
+        <div class="wrapper">
+          <ul class="dropdown-content">
+            <li>
+              <a href="./quiz_page.html#quiz_1">الدرس التمهيدي</a>
+            </li>
+            <li>
+              <a href="./quiz_page.html#quiz_2">درس التوابع</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="popup">
+      <video controls></video>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
