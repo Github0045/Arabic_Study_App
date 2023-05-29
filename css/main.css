@@ -11,15 +11,17 @@ body {
     font-family: 'Open Sans', 'Noto Sans Arabic', sans-serif;
     background-color: #cfd8dd;
     text-decoration: rtl;
+    padding: 12px;
 }
 
 /* Main Styling */
 .container {
     width: 500px;
     margin: auto;
+    max-width: 100%;
 }
 .container h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1;
     text-align: center;
     margin: 64px 0 72px;
@@ -66,6 +68,7 @@ body {
 
 /* Overlay */
 .overlay {
+    padding: 12px;
     position: fixed;
     top: 0;
     left: 0;
@@ -84,6 +87,7 @@ body {
     opacity: 1;
 }
 .overlay .popup {
+    max-width: 100%;
     border-radius: 8px;
     width: 600px;
     background-color: #f4f4f4;
